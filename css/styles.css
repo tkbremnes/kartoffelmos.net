@@ -1,0 +1,75 @@
+body {
+	background: #111;
+	color: #222;
+}
+
+body ::selection
+{
+  background: #F660AB;
+}
+
+
+h1 {
+	text-transform: uppercase;
+	font-size: 3em;
+	text-transform: uppercase;
+	letter-spacing: -0.05em;
+	text-shadow: 0 1px 0 #303030;
+	font-family: PT Sans, sans-serif;
+	cursor: default;
+}
+
+#main {
+	width: 480px;
+	margin: 5em auto;
+	padding: 0;
+	text-align: center;
+}
+
+header {
+	margin: 0;
+	width: 100%;
+	padding: 0;
+}
+
+footer {
+	border-top: 1px dashed lightblue;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.social_icons {
+  list-style-type: none;
+  padding: 0; margin: 0;
+}
+
+.social_icons li {
+  display: inline-block;
+}
+
+.icon {
+  border: 2px dashed hsl(184, 75%, 46%);
+  border-radius: 50%;
+  height: 6em; width: 6em;
+  margin: 0 1em;
+  
+  -webkit-transition: all cubic-bezier(0, 0.35, .5, 1.3) 1s;
+  -o-transition: all cubic-bezier(0, 0.35, .5, 1.3) 1s;
+  -moz-transition: all cubic-bezier(0, 0.35, .5, 1.3) 1s;
+  -ms-transition: all cubic-bezier(0, 0.35, .5, 1.3) 1s;
+  transition: all cubic-bezier(0, 0.35, .5, 1.3) 1s;
+}
+
+.icon:hover {
+  cursor: pointer;
+  -webkit-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+#icon_wrapper {
+  width: auto;
+}
