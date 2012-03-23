@@ -135,6 +135,7 @@ a
 #navigation_links a:hover
 {
   color: #404040;
+  cursor: pointer;
 }
 
 
