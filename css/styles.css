@@ -147,9 +147,6 @@ a
 .content {
   font-size: 1.5em;
   color: #eaeaea;
-}
-
-.content:hover{
   cursor: default;
 }
 
@@ -157,7 +154,6 @@ a
 {
   display: inline;
 }
-
 #who:target~nav #who_button, 
 #what:target~nav #what_button,
 #why:target~nav #why_button
@@ -180,12 +176,6 @@ a
   position: absolute;
   top: 0;
   left: 0;
-  height: 3em;
-}
-
-#who_button:focus
-{
-  background: pink; 
 }
 
 @media screen and (min-width: 520px) {
