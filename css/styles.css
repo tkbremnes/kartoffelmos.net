@@ -2,6 +2,7 @@ body {
 	background: #111;
 	background-image: url(../img/noise.png);
 	color: #222;
+  font-family: PT Sans, sans-serif;
 }
 
 body ::selection
@@ -9,36 +10,40 @@ body ::selection
   background: #F660AB;
 }
 
+a
+{
+  color: #1DC2CD;
+
+}
 
 h1, h2 {
 	text-transform: uppercase;
 	letter-spacing: -0.05em;
 	text-shadow: 0 1px 0 #303030;
-	font-family: PT Sans, sans-serif;
 	cursor: default;
 	margin: 0;
 }
 
 h1{
-	font-size: 3em;
+	font-size: 8em;
 }
 
 h2 {
-	font-size: 2em;
+	font-size: 6em;
 }
 
 
 #main {
 	width: 480px;
-	margin: 5em auto;
+	margin: 1em auto;
 	padding: 0;
 	text-align: center;
+  position: absolute;
 }
 
-header {
-	margin: 0;
-	width: 100%;
-	padding: 0;
+#bground {
+  margin: auto;
+  text-align: center;
 }
 
 
@@ -54,8 +59,8 @@ header {
 .icon {
   border: 2px dashed hsl(184, 75%, 46%);
   border-radius: 50%;
-  height: 6em; width: 6em;
-  margin: 0 1em;
+  height: 4em; width: 4em;
+  margin: 1em 1em;
   
   -webkit-transition: all cubic-bezier(0, 0.35, .5, 1.3) 1s;
   -o-transition: all cubic-bezier(0, 0.35, .5, 1.3) 1s;
@@ -79,4 +84,106 @@ header {
 
 footer {
 	margin-top: 3em;
+}
+
+
+body::selection
+{
+  background: #F660AB;
+}
+
+#navigation_links {
+  width: 100%;
+}
+
+#navigation_links ul
+{
+  list-decoration: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+#navigation_links li
+{
+  display: inline-block;
+  margin: 0; padding: 0;
+  font-size: 1.5em;
+  width: 30%;
+  text-align: center;
+}
+
+a
+{
+  text-decoration: none;
+}
+
+#navigation_links a
+{
+  color: #222;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  transition: color ease-in-out 0.08s;
+}
+
+.content a:hover
+{
+  text-decoration: underline;
+}
+
+
+#navigation_links a:hover
+{
+  color: #404040;
+}
+
+
+
+.content
+{
+  display: none;
+}
+
+.content {
+  font-size: 1.5em;
+  color: #eaeaea;
+}
+
+.content:hover{
+  cursor: default;
+}
+
+.content:target 
+{
+  display: inline;
+}
+
+#who:target~nav #who_button, 
+#what:target~nav #what_button,
+#why:target~nav #why_button
+{
+  color: #eaeaea;
+  text-shadow: 1px 1px 2px #333, -1px -1px 2px #333, 1px -1px 2px #333, -1px 1px #333;
+  border-bottom: 2px dotted;
+  cursor: default;
+}
+
+#content_wrapper {
+  position: relative;
+  padding-top: 3em;
+  width: 480px;
+  margin: 2em auto 0 auto;
+}
+
+#content_wrapper nav
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3em;
+}
+
+#who_button:focus
+{
+  background: pink; 
 }
