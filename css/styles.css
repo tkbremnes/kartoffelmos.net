@@ -19,17 +19,30 @@ a
 h1, h2 {
 	text-transform: uppercase;
 	letter-spacing: -0.05em;
-	text-shadow: 0 1px 0 #303030;
+	text-shadow: 0 1px 0 #303030, -1px 0 0 #303030;
 	cursor: default;
 	margin: 0;
 }
 
-h1{
+header h1 {
 	font-size: 2em;
 }
 
-h2 {
+header h2 {
 	font-size: 1.5em;
+}
+
+h1.yearheader {
+  -webkit-transition: color ease-out 0.3s;
+  -o-transition: color ease-out 0.3s;
+  -ms-transition: color ease-out 0.3s;
+  -moz-transition: color ease-out 0.3s;
+  transition: color ease-out 0.3s;
+}
+
+article.year:hover >h1
+{
+  color: #eaeaea;
 }
 
 #main {
@@ -47,6 +60,76 @@ header {
 {
   width: 100%;
 }
+
+div.c img {
+  border: 1px solid #303030;
+  padding: 0.5em;
+  background: #222;
+  box-shadow: 1px 0 3px #000;
+}
+section.language img{
+  border: 1px solid #303030;
+  padding: 0.1em;
+  background: #222;
+  box-shadow: 1px 0 3px #000;
+}
+
+img.html5logo {
+  border: 1px solid #303030;
+  padding: 0.2em;
+  background: #222;
+  box-shadow: 1px 0 3px #000;
+  position: absolute;
+  top: 2em;
+  left: -4em;
+}
+
+article.project {
+  position: relative;
+  max-width: 500px;
+  padding: 2em 0;
+  border-top: 1px dashed #222;
+  -webkit-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  -ms-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+}
+
+div.c{
+  color: #eaeaea;
+  text-shadow: 1px 0 0 #303030;
+
+  -webkit-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  -ms-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+}
+
+
+article.year+article.year {
+  margin-top: 2em;
+}
+
+article.project a {
+  top: 0;
+  left: 0;
+}
+
+/*article.project:hover div.c, article.project:target div.c{
+  color: #eaeaea;
+}*/
+
+
+article.project:hover section.techused, article.project:target section.techused{
+  color: #404040;
+}
+/*
+article.project:hover div.c{
+  padding-left: 0.5em;
+}
+*/
 
 .social_icons {
   list-style-type: none;
@@ -124,6 +207,7 @@ a
   text-transform: uppercase;
   letter-spacing: -0.05em;
   transition: color ease-in-out 0.08s;
+  text-shadow: 0 1px 0 #303030;
 }
 
 .content a:hover
@@ -140,13 +224,41 @@ a
 
 
 
+
+/*--------------------------------
+  Techused-delen for prosjektsiden
+----------------------------------*/
+section.techused
+{
+  margin-top: 2em;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 0.8em;
+  cursor: default;
+}
+
+section.techused ul
+{
+  list-decoration: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+section.techused li
+{
+  display: inline-block;
+  margin: 0; padding: 0 1.5em;
+}
+
+
 .content
 {
   display: none;
 }
 
 .content {
-  font-size: 1.5em;
+  font-size: 1em;
   color: #eaeaea;
   cursor: default;
 }
@@ -155,6 +267,13 @@ a
 {
   display: inline;
 }
+
+
+
+
+/*------------------------------------------------
+  Incredibly dirty hack to experiment with CSS and to avoid the use of JavaScript. I feel ashamed.
+--------------------------------------------------*/
 #who:target~nav #who_button, 
 #what:target~nav #what_button,
 #why:target~nav #why_button
@@ -164,6 +283,11 @@ a
   border-bottom: 2px dotted;
   cursor: default;
 }
+
+
+
+
+
 
 #content_wrapper {
   position: relative;
@@ -178,6 +302,18 @@ a
   top: 0;
   left: 0;
 }
+
+
+article.project h1 {
+  font-size: 2.5em;
+}
+
+
+
+
+/*----------------
+  Media queries <3
+------------------*/
 
 @media screen and (min-width: 520px) {
   h1{
@@ -203,10 +339,10 @@ a
   header{
     text-align: left;
   }
-  h1{
+  header h1{
     font-size: 6em;
   }
-  h2{
+  header h2{
     font-size: 4.5em;
   }
   #content_wrapper{
@@ -223,13 +359,15 @@ a
     width: 14em;
     text-align: center;
   }
+
+
 }
 
 @media screen and (min-width: 1000px) {
-  h1{
+  header h1{
     font-size: 8em;
   }
-  h2{
+  header h2{
     font-size: 6em;
   }
   #navigation_links{
@@ -240,5 +378,12 @@ a
     padding-top: 3em;
   }
 
+  .content {
+    font-size: 1.5em;
+  }
+
+  div.c{
+  font-size: 1.1em;
+}
 
 }
