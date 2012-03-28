@@ -16,6 +16,14 @@ a
 
 }
 
+#profile
+{
+  padding: 0.5em;
+  border: #333;
+  background: #222;
+  box-shadow: -2px 2px 3px #000;
+}
+
 h1, h2 {
 	text-transform: uppercase;
 	letter-spacing: -0.05em;
@@ -304,7 +312,7 @@ section.techused li
 }
 
 
-article.project h1 {
+article h1 {
   font-size: 2.5em;
 }
 
