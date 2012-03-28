@@ -3,6 +3,7 @@ body {
 	background-image: url(../img/noise.png);
 	color: #222;
   font-family: PT Sans, sans-serif;
+  overflow-x: hidden;
 }
 
 body ::selection
@@ -30,6 +31,7 @@ h1, h2 {
 	text-shadow: 0 1px 0 #303030, -1px 0 0 #303030;
 	cursor: default;
 	margin: 0;
+  white-space: nowrap;
 }
 
 header h1 {
@@ -58,6 +60,21 @@ article.year:hover >h1
 	margin: 1em auto;
 	padding: 0;
 	text-align: center;
+}
+
+#internalLinks
+{
+  text-align: left;
+}
+
+#internalLinks ul {
+  list-style-type: none;
+  margin-left: 2em;
+  padding: 0;
+}
+
+#internalLinks a:hover {
+  text-decoration: underline;
 }
 
 header {
@@ -130,7 +147,7 @@ article.project a {
 }*/
 
 
-article.project:hover section.techused, article.project:target section.techused{
+section.techused {
   color: #404040;
 }
 /*
@@ -236,11 +253,16 @@ a
 /*--------------------------------
   Techused-delen for prosjektsiden
 ----------------------------------*/
+table h1
+{
+  text-align: center;
+  margin: 0 0.3em 0 0;
+}
+
 section.techused
 {
-  margin-top: 2em;
   text-transform: uppercase;
-  text-align: center;
+  text-align: right;
   font-size: 0.8em;
   cursor: default;
 }
@@ -256,7 +278,7 @@ section.techused ul
 section.techused li
 {
   display: inline-block;
-  margin: 0; padding: 0 1.5em;
+  margin: 0; padding: 0 1.2em;
 }
 
 
@@ -313,11 +335,21 @@ section.techused li
 
 
 article h1 {
-  font-size: 2.5em;
+  font-size: 1.5em;
 }
 
+/*section.shortdesc
+{
+  opacity: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.5s;
+}
 
-
+article:target section.shortdesc 
+{
+  opacity: 1;
+}
+*/
 
 /*----------------
   Media queries <3

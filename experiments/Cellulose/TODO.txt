@@ -1,0 +1,14 @@
+* Fikse lange fotnoter
+* Fikse flere fotnoter per side
+* Plassering av progressbar
+* Kildehenvisning bakerst
+	* <a>-tag?
+* Header
+
+* Interaktiv graf?
+* Something something local storage
+	* settings av et slag
+
+BUGS
+* Når en resizer vinduet kan fotnotetegn formere seg.
+* Måten fotnotereferanser legges til gjør at teksten hopper mye, spesielt med liten skjerm
