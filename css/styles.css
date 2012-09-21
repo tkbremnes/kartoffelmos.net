@@ -338,6 +338,10 @@ article h1 {
   font-size: 1.5em;
 }
 
+span.strike {
+  text-decoration: strike;
+}
+
 /*section.shortdesc
 {
   opacity: 0;
@@ -350,6 +354,25 @@ article:target section.shortdesc
   opacity: 1;
 }
 */
+
+
+
+
+
+/*
+  CV-specific
+*/
+#yearlinks ul {
+  list-style-type: none;
+  padding: 0; margin: 0;
+}
+#yearlinks li {
+  display: inline-block;
+}
+
+
+
+
 
 /*----------------
   Media queries <3
@@ -423,7 +446,7 @@ article:target section.shortdesc
   }
 
   div.c{
-  font-size: 1.1em;
-}
+    font-size: 1.1em;
+  }
 
 }

@@ -1,0 +1,191 @@
+{
+
+	// Utdanning
+
+	Education: {
+
+		NTNU2: {
+			start: {
+				month: "august",
+				year: 2011
+			},
+			fullName: {
+				no: "Norges Tekniske og Naturvitenskaplige Universitet",
+				en: "Norwegian University of Science and Technology"
+			},
+			location: "Trondheim",
+			url: {
+				no: "http://ntnu.no",
+				en: "http://ntnu.edu"
+			},
+			courseName: {
+				no: "Master i Menneske-Maskin Interaksjon",
+				en: "Master of Human Computer Interaction"
+			},
+
+		},
+
+		NTNU1: {
+			start: {
+				month: "august",
+				year: 2008
+			},
+			end: {
+				month: "june",
+				year: 2011
+			},
+			fullName: {
+				no: "Norges Tekniske og Naturvitenskaplige Universitet",
+				en: "Norwegian University of Science and Technology"
+			},
+			location: "Trondheim",
+			url: {
+				no: "http://ntnu.no",
+				en: "http://ntnu.edu"
+			},
+			courseName: {
+				no: "Bachelor i Informatikk",
+				en: "Bachelor of Informatics",
+			},
+			title: "Bachelor of Informatics"
+
+		},
+
+
+		BI: {
+			start: {
+				month: "august",
+				year: 2006
+			},
+			end: {
+				month: "june",
+				year: 2008
+			},
+			fullName: {
+				no: "Handelshøyskolen BI",
+				en: "BI Norwegian Business School"
+			},
+			courseName: {
+				no: "Bachelor i Informatikk",
+				en: "Bachelor of Informatics",
+			},
+			location: "Trondheim",
+			url: "http://www.bi.edu/",
+			title: "Markedskandidat"
+		},
+
+
+		AltaVgs: {
+			start: {
+				month: "august",
+				year: 2002
+			},
+			end: {
+				month: june,
+				year: 2005
+			},
+			fullName: {
+				no: "Alta Videregående Skole",
+			},
+			location: "Alta"
+			url: {
+				no: "http://www.alta.vgs.no/"
+			},
+			courseName: {
+				no: "Allmenne, økonomiske og administrative fag"
+			}
+
+		},
+	},
+
+
+
+	// Jobb
+	Tine: {
+		start: {
+			month: "september",
+			year: 2005
+		},
+		end: {
+			month: "march",
+			year: 2006
+		}
+	},
+
+
+	// Sommerjobb
+	BouvetASA: {
+		start: {
+			month: "june",
+			year: 2011
+		},
+		end: {
+			month: "july",
+			year: 2011
+		},
+		fullName: {
+			no: "Bouvet ASA"
+		},
+		location: "Oslo",
+		url: {
+			no: "http://bouvet.no"
+		}
+
+	},
+
+
+	// Frivillig
+
+	BEST: {
+		start: {
+			month: "september",
+			year: 2008
+		},
+		end: {
+			month: "june",
+			year: 2011,
+		},
+		fullName: {
+			no: "Board of European Students of Technology, Trondheim"
+		},
+		url: {
+			no: "http://org.ntnu.no/best"
+		},
+		description: "Head of IT 2009-2010. Some involvement in the international IT commitee."
+
+	},
+
+	ISFiT: {
+		start: {
+			month: "march",
+			year: 2012
+		},
+		fullName: {
+			no: "International Student Festival in Trondheim"
+		},
+		url: "http://isfit.org",
+		title: "Project Responsible, IT"
+	},
+
+	misc: {
+		TrondheimCalling: {
+			year: 2011,
+			description: "Host during seminars.",
+			url: "http://www.trondheimcalling.no/",
+			location: "Trondheim"
+		},
+		bylarm: {
+			year: 2007,
+			descripton: "Tending the bar during concerts.",
+			url: "http://www.bylarm.no/",
+			location: "Trondheim"
+		},
+		operasjonDagsverk: {
+			year: 2004,
+			descripton: "General arranging.",
+			location: "Alta"
+		}
+
+	}
+
+}

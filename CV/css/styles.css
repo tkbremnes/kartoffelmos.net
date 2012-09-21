@@ -1,0 +1,155 @@
+html {
+	font-family: 'Open Sans';
+}
+
+body {
+	padding: 0; margin: 0;
+	padding-bottom: 2em;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans Condensed';
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0; padding: 0;
+}
+
+article.main {
+	max-width: 740px;
+	margin:auto;
+}
+
+section.sec:not(:last-child) {
+	border-bottom: 1px solid #ddd;
+}
+section.sec {
+	padding: 1em 0;
+}
+
+section.sec header {
+	text-align: left;
+
+	display: inline-block;
+	width: 30%;
+	float: left;
+}
+
+section.sec header h1 {
+	color: #888;
+	font-size: 1.6em;
+	margin-top: -.1em;
+}
+
+section.sec .wrapper {
+	display: inline-block;
+	width: 69%;
+}
+
+#main-header {
+	padding: 2em 0;
+}
+
+#main-header h1 {
+	font-size: 5.3em;
+	line-height: 1em;
+	margin: 0;
+}
+
+#main-header h2 {
+	text-align: center;
+	font-weight: normal;
+	letter-spacing: .2em;
+	margin-top: .5em;
+}
+
+#contact {
+	float: right;
+	padding: 1em;
+}
+
+#contact p {
+	margin: .2em;
+	font-style: italic;
+}
+
+#contact p::before {
+	margin-right: .5em;
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+.simplelist {
+
+}
+
+.simplelist ul {
+	margin:0; padding: 0;
+}
+
+.simplelist li {
+	display: inline-block;
+	padding-left: 1em;
+}
+
+.simplelist li:not(:last-child)::after {
+	font-family: "FontAwesome";
+	src: url('../font/fontawesome-webfont.eot');
+	src: url('../font/fontawesome-webfont.eot?#iefix') format('eot'), url('../font/fontawesome-webfont.woff') format('woff'), url('../font/fontawesome-webfont.ttf') format('truetype'), url('../font/fontawesome-webfont.svg#FontAwesome') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	content: '\f06d';
+	padding-left: 1em;
+}
+
+.complexlist li {
+	display: block;
+}
+
+.complexlist li:not(:last-child) {
+	border-bottom: 1px solid #ddd;
+}
+
+.complexlist li:not(:first-child) {
+	padding: 1em 0;
+}
+
+.complexlist p.duration {
+	font-style: italic;
+	font-size: 1em;
+}
+.complexlist h1 span.duration {
+	font-weight: normal;
+	font-style: italic;
+}
+
+.complexlist p.description {
+	margin-top: .5em;
+	font-size: 1em;
+}
+
+
+article.position h1.title {
+	font-size: 1.5em;
+}
+
+a {
+	text-decoration: none;
+	color: #0088CC;
+}
+
+a:hover {
+	background: #0088CC;
+	color: white;
+}
+
+#printinfo {
+	margin-top: 8em;
+	text-align: center;
+}
